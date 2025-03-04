@@ -2,6 +2,7 @@ import { Button, Grid, GridItem, Show } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import GameGrid from "./components/GameGrid";
 import { useState } from "react";
+import GenreList from "./components/GenreList";
 
 function App() {
   const [itIs, setItIs] = useState(true);
@@ -18,7 +19,7 @@ function App() {
 
       <Show above="lg">
         <GridItem area="aside">
-          <Button onClick={() => setItIs(!itIs)}>It Is</Button>
+          <GenreList></GenreList>
         </GridItem>
       </Show>
 
