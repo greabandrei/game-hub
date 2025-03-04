@@ -6,6 +6,7 @@ import GenreList from "./components/GenreList";
 import { Genre } from "./hooks/useGenres";
 
 import { Props } from "./components/GameCard";
+import PlatformSelector from "./components/PlatformSelector";
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
       </Show>
 
       <GridItem>
+        <PlatformSelector></PlatformSelector>
         <GameGrid selectedGenre={selectedGenre}/>
       </GridItem>
     </Grid>
